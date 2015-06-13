@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Homeapis</h1>
+
+    <%= @homeapis.to_json%>
+        
+<br>
+
+<%= link_to 'New Homeapi', new_homeapi_path %>
+
+<a name="#ajax-getjson-example"></a>
+<div id="example-section38">    
+    <div>Car sale report</div>
+    <div id="div381"></div>
+    <button id="btn382" type="button">Click to load car sale report (json type)</button>    
+    &nbsp;<a href="/backend/data/car-sale.json" target="_blank">Original car sale report</a>
+</div>
