@@ -1,17 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Homeapis</h1>
+<h1>Welcome</h1>
+<p>Cuanto tiempo libre tienes?</p>
 
-    <%= @homeapis.to_json%>
-        
-<br>
+<p>Que te interesa hoy?</p>
 
-<%= link_to 'New Homeapi', new_homeapi_path %>
+<%= form_for @homeapi, url: homeapis_search_path() do |f| %>
+   <%= f.text_field :tag %><br />
+   <%= f.submit %><br />
+<% end %>
 
-<a name="#ajax-getjson-example"></a>
-<div id="example-section38">    
-    <div>Car sale report</div>
-    <div id="div381"></div>
-    <button id="btn382" type="button">Click to load car sale report (json type)</button>    
-    &nbsp;<a href="/backend/data/car-sale.json" target="_blank">Original car sale report</a>
-</div>
+  
