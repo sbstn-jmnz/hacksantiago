@@ -1,7 +1,12 @@
 <div class="row">
 	<div class="col-md-12 text-center">
 		<h1 class="site-title"><strong>Kintun</strong></h1>
+<<<<<<< HEAD
 		<form class="form">
+=======
+
+          <%=form_for @homeapi, url:homeapis_search_path do |f|%>
+>>>>>>> 6345cccf802b51d374f70a709d3e38495a1c90d4
 			<div class="form-group">
 				<div class="col-md-offset-3 col-md-6">
 					<p class="text-center">
@@ -10,30 +15,37 @@
 						</p>	  
 						<div class="btn-group" data-toggle="buttons">
 							<label class="btn btn-primary active">
-								<input type="radio" name="options" id="option1" autocomplete="off" checked> 10 min.
+								<input type="radio" name="time" id="option1" autocomplete="off" checked value="10"> 10 min.
 							</label>
 							<label class="btn btn-primary">
-								<input type="radio" name="options" id="option2" autocomplete="off"> 20 min.
+								<input type="radio" name="time" id="option2" autocomplete="off" value="20"> 20 min.
 							</label>
 							<label class="btn btn-primary">
-								<input type="radio" name="options" id="option3" autocomplete="off"> 30 min.
+								<input type="radio" name="time" id="option3" autocomplete="off" value="30"> 30 min.
 							</label>
 							<label class="btn btn-primary">
-								<input type="radio" name="options" id="option3" autocomplete="off"> 40 min.
+								<input type="radio" name="time" id="option4" autocomplete="off" value="40"> 40 min.
 							</label>
 							<label class="btn btn-primary">
-								<input type="radio" name="options" id="option3" autocomplete="off"> 50 min.
+								<input type="radio" name="time" id="option5" autocomplete="off" value="50"> 50 min.
 							</label>
 						</div> 
 						<br>
 						<p class="text-center">
 							<label class="col-sm-2 control-label" for="formGroupInputLarge">
-								<h3>Tienes un tema de interes?</h3> </label>
+								<h3>¿Tienes un tema de interés?</h3> </label>
 							</p>	
 							<br>
+<<<<<<< HEAD
 							<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
 							<br>
 							<button type="submit" class="btn btn-default">kintum!</button>
+=======
+
+                            <%=f.text_field :tag %>
+                            <br>
+							<%=f.submit%>
+>>>>>>> 6345cccf802b51d374f70a709d3e38495a1c90d4
 							<br>
 							<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-primary">
@@ -42,9 +54,15 @@
 							</div> 
 						</div>
 					</div>
+<<<<<<< HEAD
 				</form>
 			</div>
 		</div>
 
 
 		
+=======
+                  <%end%>
+			</div>
+		</div>
+>>>>>>> 6345cccf802b51d374f70a709d3e38495a1c90d4

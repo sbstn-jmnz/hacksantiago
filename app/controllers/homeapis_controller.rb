@@ -10,9 +10,8 @@ class HomeapisController < ApplicationController
   # GET /homeapis/1
   # GET /homeapis/1.json
   def search
-    search_posts(params[:homeapi][:tag])
+    search_posts( params[:homeapi][:tag],params[:time] )
   end
-
  
   private
 

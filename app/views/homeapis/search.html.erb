@@ -1,5 +1,14 @@
 <p id="notice"><%= notice %></p>
+<<<<<<< HEAD
 	<% @response['posts'].each do |p|%>
 		<%= p['title'] %> </br>
 	<%end%>
+=======
+
+<%  @response['posts'].each do |p| %>
+Título: <%=p['title'].html_safe%> <br />
+Content: <%=p['content'].html_safe%>
+<hr/>
+<%end%>
+>>>>>>> 6345cccf802b51d374f70a709d3e38495a1c90d4
 <%= link_to 'Back', homeapis_path %>
