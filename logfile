@@ -1,0 +1,4 @@
+LOG:  database system was shut down at 2015-04-20 00:05:23 CLST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "demoapi_development" does not exist
