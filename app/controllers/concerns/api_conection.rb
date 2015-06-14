@@ -5,20 +5,30 @@ module ApiConection
 	url = 'https://public-api.wordpress.com/rest/v1.1/read/tags/'
 	url += tag 
 	url += ''
-	url += '/posts'
+	url += '/posts/'
+	url += '?number=40'
+
   
-  @resultado = []
-	response = JSON.parse HTTParty.get(url).response.body
-  response['posts'].each do |r|
+  	time = 30*time.to_i
+
+  		@resultado = []
+		response = JSON.parse HTTParty.get(url).response.body
+  		response['posts'].each do |p|
     
-      if( r['content'].length <= time )
-          @resultado << r;
-      end
-
+      	if(post_size(p['content']) <= time.to_i )
+          puts post_size(p['content'])
+          @resultado << p
+      	end
+  	end
   end
 
+
+  def post_size(post)
+  	post.split.size
   end
 
-	def search_post(blog_id)
-	end
+
+  def search_post(blog_id)
+  end
+
 end

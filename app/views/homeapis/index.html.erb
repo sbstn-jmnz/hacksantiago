@@ -1,12 +1,7 @@
 <div class="row">
 	<div class="col-md-12 text-center">
 		<h1 class="site-title"><strong>Kintun</strong></h1>
-<<<<<<< HEAD
-		<form class="form">
-=======
-
           <%=form_for @homeapi, url:homeapis_search_path do |f|%>
->>>>>>> 6345cccf802b51d374f70a709d3e38495a1c90d4
 			<div class="form-group">
 				<div class="col-md-offset-3 col-md-6">
 					<p class="text-center">
@@ -36,16 +31,10 @@
 								<h3>¿Tienes un tema de interés?</h3> </label>
 							</p>	
 							<br>
-<<<<<<< HEAD
-							<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
-							<br>
-							<button type="submit" class="btn btn-default">kintum!</button>
-=======
-
-                            <%=f.text_field :tag %>
+                            <%=f.text_field :tag , :class => 'form-control' %>
                             <br>
-							<%=f.submit%>
->>>>>>> 6345cccf802b51d374f70a709d3e38495a1c90d4
+							<%= f.submit 'Kintun!', :class => 'btn btn-success btn-lg btn-block' %>
+
 							<br>
 							<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-primary">
@@ -54,15 +43,7 @@
 							</div> 
 						</div>
 					</div>
-<<<<<<< HEAD
-				</form>
-			</div>
-		</div>
-
-
-		
-=======
                   <%end%>
 			</div>
 		</div>
->>>>>>> 6345cccf802b51d374f70a709d3e38495a1c90d4
+
