@@ -1,0 +1,30 @@
+<div class="row">
+	
+	<% @resultado.each do |r| %>
+
+	<div class="col-md-12">
+		<img src="<%= r[4] %>" alt="<%= r[0] %>" style="" class="img-responsive img-thumbnail"> 
+
+	</div>
+	<div class="col-md-12">
+		<span class="h2"> <%= r[0] %> </span> 
+	<br>
+		<span class="muted">( <%= r[1] %> )</span>
+	</div>
+	<div class="col-md-12 postArticle-content"> <br>
+		<%= r[2] %> 
+	</div>
+	<div class="col-md-12">
+		<p>	<%= r[3] %>  </p>
+	</div>
+	    <div class="col-md-12 text-center">
+		<p> <a href="<%= tiles_show_path %>" class="btn  btn-primary">Random mágico</a>
+		</p>
+	</div>
+	
+	<br>
+	
+	<% end %>
+
+
+</div>

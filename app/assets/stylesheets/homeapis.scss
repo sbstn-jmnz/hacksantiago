@@ -6,10 +6,46 @@
 .site-title {
 font-family: 'Lobster',Georgia,Times,serif;
 text-shadow: 0px 1px 0px rgba(0,0,0,0), 0px 2px 0px rgba(0,0,0,0), 0px 3px 0 #aaa, 0px 4px 0 #aaa, 0px 5px 0 #aaa, 0px 6px 0 #aaa, 0px 7px 0 #aaa, 0px 8px 0 #aaa, 0px 10px 5px rgba(0,0,0,.7), 0px 0px 2px rgba(0,0,0,.4);
-
 font-size: 6.5em;
-  color: white;
+color: white;
+}
 
+.menu-title {
+font-family: 'Lobster',Georgia,Times,serif;
+text-shadow: 0px 1px 0px rgba(0,0,0,0);
+font-size: 2.5em;
+color: white;
+}
+
+.h2  {
+position: relative;
+font-size: 32px;
+line-height: 1.5;
+margin-bottom: 30px;
+font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+letter-spacing: .01rem;
+font-weight: 400;
+font-style: normal;
+
+}
+.postArticle-content {
+position: relative;
+font-size: 22px;
+line-height: 1.5;
+margin-bottom: 30px;
+font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+letter-spacing: .01rem;
+font-weight: 400;
+font-style: normal;
 
 }
 
+.btn-magico {
+	
+	font-family: 'Lobster',Georgia,Times,serif;
+	color:white;
+
+	
+}
+
+a:visited.btn { color:white;}

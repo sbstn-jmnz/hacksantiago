@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
+  get 'pages/contact'
+
+  get 'pages/team'
+
+  get 'tiles/show'
+
   resources :homeapis
   post  'homeapis/search/', to: 'homeapis#search'
+  
+  namespace :api, path: '/', constraints: { subdomain: 'api' } do
+       resources :scrap
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
-
-<%  @resultado.each do |p| %>
-Nro Post: <%= @resultado.index(p)%>
-Título: <%=p['title'].html_safe%> <br />
-Content: <%=p['content'].html_safe%>
-<hr/>
-<%end%>
-
-<%= link_to 'Back', homeapis_path %>
+<div class='row'>
+	<%  @resultado.each do |p| %>
+	<div class="col-md-12">
+		<h2><a href="<%=p['URL'].html_safe%>"><%=p['title'].html_safe%></a><br /></h2>
+		<%=p['excerpt'].html_safe%>
+		<hr/>
+	</div>
+	<%end%>
+</div>
+<%= link_to 'Volver', homeapis_path %>
