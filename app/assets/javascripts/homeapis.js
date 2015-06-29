@@ -1,8 +1,8 @@
 $(function (){
 
 
-$("img").addClass("img-responsive");
+	$("img").addClass("img-responsive");
+	  
  
-
 
 });

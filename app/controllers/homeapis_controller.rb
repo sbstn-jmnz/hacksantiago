@@ -12,12 +12,14 @@ class HomeapisController < ApplicationController
   def search
 
  
-    @time = params[:time]
+    @time = params[:time]  
  
-    @tag = params[:tag] 
+    @tag = params[:tag]  
 
-    search_posts( @tag,@time)
+  
 
+      search_posts( @tag,@time)
+       
 
   end
 

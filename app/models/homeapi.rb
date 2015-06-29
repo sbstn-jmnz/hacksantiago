@@ -1,3 +1,4 @@
 class Homeapi < ActiveRecord::Base
 	attr_accessor :tag
-end
+	 validates :tag, presence: true
+ end
