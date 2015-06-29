@@ -1,7 +1,9 @@
 <div class="row">
 	<div class="col-md-12 text-center">
 		<h1 class="site-title"><strong>Kintun</strong></h1>
-          <%=form_for @homeapi, url:homeapis_search_path do |f|%>
+
+
+          <%= form_tag "/homeapis/search", method: "post" do %>
 			<div class="form-group">
 				<div class="col-md-offset-3 col-md-6">
 					<p class="text-center">
@@ -31,9 +33,10 @@
 								<h3>¿Tienes un tema de interés?</h3> </label>
 							</p>	
 							<br>
-                            <%=f.text_field :tag , :class => 'form-control' %>
+ 
+                            <%= text_field_tag :tag, nil, class: 'form-control' %>
                             <br>
-							<%= f.submit 'Kintun!', :class => 'btn btn-success btn-lg btn-block' %>
+							<%= submit_tag 'Kintun!', class: 'btn btn-success btn-lg btn-block' %>
 
 							<br>
 							<a href="<%= tiles_show_path %>" class="btn  btn-primary">Random mágico</a>

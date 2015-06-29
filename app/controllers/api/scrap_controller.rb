@@ -8,8 +8,8 @@ module API
      	@year = rand(2002..2013)
      	@n = rand(1..12)
 
-     #@year = 2006
-     #@n = 11
+     	#@year = 2006
+     	# => @n = 11
 
     	url= 'http://www.santiagoen100palabras.cl/2015/va.php?ano='+@year.to_s+'&cuento='+@n.to_s
         mechanize = Mechanize.new
@@ -27,19 +27,6 @@ module API
 			render json: resultado, status: 200
 		end
 
-		def create
-			measure = Measure.new(measure_params)
-			if measure.save
-				render json: measure, status: 201, location: api_circuit_measure_path(measure.circuit_id, measure)
-			else 
-				render json: measure.errors, status: 422
-			end
-		end
-	
-		protected
-
-		def show
 		
-    	end
 	end
 end

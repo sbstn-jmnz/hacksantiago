@@ -17,7 +17,9 @@ font-size: 2.5em;
 color: white;
 }
 
-.h2  {
+ 
+
+.h2, h2  {
 position: relative;
 font-size: 32px;
 line-height: 1.5;
@@ -28,7 +30,7 @@ font-weight: 400;
 font-style: normal;
 
 }
-.postArticle-content {
+.postArticle-content, .postArticle-content p {
 position: relative;
 font-size: 22px;
 line-height: 1.5;
@@ -39,6 +41,8 @@ font-weight: 400;
 font-style: normal;
 
 }
+
+
 
 .btn-magico {
 	

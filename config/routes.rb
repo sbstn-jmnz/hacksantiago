@@ -5,9 +5,11 @@ Rails.application.routes.draw do
 
   get 'tiles/show'
 
+ 
   resources :homeapis
   post  'homeapis/search/', to: 'homeapis#search'
-  
+  #post  'homeapis/show/', to: 'homeapis#show'
+
   namespace :api, path: '/', constraints: { subdomain: 'api' } do
        resources :scrap
   end

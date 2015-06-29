@@ -1,6 +1,6 @@
 class TilesController < ApplicationController
   def show
-  @resultado = []
+        @resultado = []
      	@year = rand(2002..2013)
      	@n = rand(1..12)
 

@@ -1,11 +1,14 @@
 <p id="notice"><%= notice %></p>
 <div class='row'>
 	<%  @resultado.each do |p| %>
-	<div class="col-md-12">
-		<h2><a href="<%=p['URL'].html_safe%>"><%=p['title'].html_safe%></a><br /></h2>
-		<%=p['excerpt'].html_safe%>
+	<div class="col-md-12 postArticle-content">
+		 
+	  <h2><%= link_to p['title'].html_safe, homeapi_path(siteid: p['site_ID'], id: p['ID'], tag: @tag, time: @time ) %></h2>
+
+		<p class="muted"> <%=p['excerpt'].html_safe%> </p>		
+	 
 		<hr/>
 	</div>
 	<%end%>
 </div>
-<%= link_to 'Volver', homeapis_path %>
+<%= link_to 'Volver', homeapis_path, class: 'btn btn-primary' %>
